@@ -13,4 +13,4 @@ if (-not (Test-Path $Python)) {
 if ($LASTEXITCODE -ne 0) { throw "Could not install PyInstaller." }
 & $Python -m PyInstaller packaging/smolchat-Windows.spec --noconfirm --distpath dist --workpath build
 if ($LASTEXITCODE -ne 0) { throw "PyInstaller build failed." }
-Write-Host "Built dist\smolchat\smolchat.exe"
+Write-Host "Built dist\smolchat.exe"

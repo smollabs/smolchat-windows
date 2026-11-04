@@ -59,7 +59,7 @@ python main.py
 
 If PowerShell blocks activation, run `Set-ExecutionPolicy -Scope Process Bypass` in that window and activate again. If no matching wheel is available, install the Visual Studio C++ workload described above, open **Developer PowerShell for VS 2022**, activate `.venv`, then run `python -m pip install llama-cpp-python` to build from source. This also resolves the `nmake`-not-found error because the developer shell adds the compiler tools to `PATH`.
 
-To build a Windows app folder containing `smolchat.exe`, run `scripts\build_windows.ps1` after installing the dependencies. The output is `dist\smolchat\`.
+To build the standalone Windows executable, run `scripts\build_windows.ps1` after installing the dependencies. The output is `dist\smolchat.exe`; users do not need Python installed. On first launch, they need an internet connection to download a model from the Model Library.
 
 The default Windows install uses CPU inference. GPU acceleration depends on a `llama-cpp-python` build with GPU offload support for the installed GPU and drivers; smolchat checks whether the installed llama.cpp library advertises GPU offload and adjusts model recommendations.
 
