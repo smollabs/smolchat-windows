@@ -1,0 +1,1 @@
+"""smolchat application package."""

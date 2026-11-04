@@ -1,0 +1,6 @@
+# Runtime
+PySide6-Essentials>=6.8      # Qt 6 / QML desktop UI (Essentials includes QtQuick, Controls, Dialogs, Svg)
+llama-cpp-python>=0.3.16     # llama.cpp inference (CPU backend by default on Windows)
+
+# Development
+pytest>=8

@@ -1,0 +1,7 @@
+singleton Theme 1.0 styles/theme.qml
+C 1.0 components.qml
+Splash 1.0 splash.qml
+Sidebar 1.0 sidebar.qml
+ChatView 1.0 chat.qml
+ModelLibrary 1.0 model_library.qml
+SettingsDialog 1.0 settings.qml
